@@ -78,7 +78,7 @@ export default {
   &.active
     color #2693ff
     z-index 4 // Coloca os três pontinhos acima do dropdown
-    position relative // Garante que o z-index funcione
+    position relative 
 
 .dropdown-menu
   position absolute
@@ -87,7 +87,7 @@ export default {
   background-color white
   border-radius 5px
   box-shadow 0 2px 10px rgba(0, 0, 0, 0.1)
-  padding 5px 30px 5px 0px // Espaço para o círculo
+  padding 5px 30px 5px 0px 
   display flex
   flex-direction column
   z-index 1
@@ -102,7 +102,7 @@ export default {
   color #333
   text-align left
   padding-left 30px
-  width 100% // Espaço para o círculo
+  width 100% 
   z-index 1000
 
   &::before
@@ -116,10 +116,10 @@ export default {
     border-radius 50%
 
 .edit-btn::before
-  background-color #32d296 // Cor verde para Editar
+  background-color #32d296 
 
 .delete-btn::before
-  background-color #c0c8d1 // Cor cinza claro para Excluir
+  background-color #c0c8d1 
 
 .dropdown-menu button:hover
   background-color #f0f0f0

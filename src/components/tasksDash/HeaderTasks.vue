@@ -14,10 +14,10 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters({
-      pendingTasksCount: 'pendingTasksCount' // Usando o getter que criamos
+      pendingTasksCount: 'pendingTasksCount'
     }),
     userName() {
-      return 'Eduardo Pereira' // Pode ser dinâmico se necessário
+      return 'Eduardo Pereira' 
     }
   }
 }

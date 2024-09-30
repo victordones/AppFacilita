@@ -51,9 +51,9 @@ export default {
     outline none
     font-size 16px
     color #333
-    background-color transparent // Sem fundo no input para coincidir com o container
+    background-color transparent 
     &::placeholder
-      color #b0bec5 // Placeholder com cor mais clara
+      color #b0bec5 
   .icon-search
     margin-right:  10px
     color: #AECBDE

@@ -41,7 +41,6 @@ export default {
   methods: {
     selectCategory(category) {
       this.selectedCategory = category
-      // Aqui você pode filtrar as tarefas por categoria
     }
   }
 }
