@@ -11,6 +11,7 @@
     <!-- Modal de Confirmação de Exclusão -->
     <ConfirmDeleteModal
       v-if="showDeleteModal"
+      :taskId="taskId"
       @close="closeDeleteModal"
       @confirm="confirmDeleteTask"
     />
@@ -25,7 +26,10 @@ export default {
     ConfirmDeleteModal
   },
   props: {
-    task: Object
+    taskId: {
+      type: Number,
+      required: true
+    }
   },
   data() {
     return {
@@ -34,8 +38,9 @@ export default {
     }
   },
   methods: {
-    toggleOptions() {
-      this.showOptions = !this.showOptions
+    confirmDeleteTask() {
+      this.$emit('delete', this.taskId) // Emite o evento de exclusão para o componente pai
+      this.closeDeleteModal()
     },
     editTask() {
       this.$emit('edit-task', this.task)

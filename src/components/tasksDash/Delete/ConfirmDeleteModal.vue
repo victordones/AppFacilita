@@ -39,9 +39,7 @@ export default {
       this.$emit('close')
     },
     confirmDelete() {
-      // Despacha a ação Vuex para excluir a tarefa
-      this.deleteTask(this.taskId)
-      this.closeModal()
+      this.$emit('confirm') // Emite o evento para o componente pai
     }
   }
 }
