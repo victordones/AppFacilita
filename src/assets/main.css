@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('@/assets/fonts/SVN-Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('@/assets/fonts/SVN-Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('@/assets/fonts/SVN-Gilroy-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('@/assets/fonts/SVN-Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('@/assets/fonts/SVN-Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('@/assets/fonts/SVN-Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('@/assets/fonts/SVN-Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('@/assets/fonts/SVN-Gilroy-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+* {
+  font-family: Gilroy, sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
