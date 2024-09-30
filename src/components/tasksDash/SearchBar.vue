@@ -6,29 +6,28 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex'
 import LogoImg from '../LogoImg.vue'
 
 export default {
   components: { LogoImg },
-  props: {
-    value: {
-      type: String,
-      default: ''
+  computed: {
+    ...mapState(['searchQuery']),
+    search: {
+      get() {
+        return this.searchQuery
+      },
+      set(value) {
+        this.setSearchQuery(value) // Usa a action para definir o termo de busca no Vuex
+      }
     }
+  },
+  methods: {
+    ...mapActions(['setSearchQuery'])
   },
   data() {
     return {
       searchSrc: 'img/search.png'
-    }
-  },
-  computed: {
-    search: {
-      get() {
-        return this.value
-      },
-      set(value) {
-        this.$emit('input', value)
-      }
     }
   }
 }

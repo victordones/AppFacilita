@@ -45,6 +45,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
 .login-wrapper
   display flex
   justify-content center

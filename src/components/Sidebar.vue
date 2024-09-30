@@ -12,13 +12,13 @@
           </router-link>
         </li>
         <li>
-          <router-link to="/tarefas">
+          <router-link to="#">
             <LogoImg :caminhoIcone="checkSrc" :size="'32px'" />
             <span>Tarefas</span>
           </router-link>
         </li>
         <li>
-          <router-link to="/configuracoes">
+          <router-link to="#">
             <LogoImg :caminhoIcone="configSrc" :size="'32px'" />
             <span>Configurações</span>
           </router-link>
@@ -38,65 +38,59 @@ export default {
       dashSrc: '/img/dash.png',
       logoSrc: '/img/logo.png',
       checkSrc: '/img/check.png',
-      configSrc: '/img/config.png',
+      configSrc: '/img/config.png'
     }
   }
 }
 </script>
 
-<style scoped>
-.sidebar {
-  background-color: #007bff;
-  color: white;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  color: white;
-  z-index: 1;
-}
+<style lang="stylus" scoped>
 
-.logo {
-  margin-top: 5px;
-}
+.sidebar
+  background-color #007bff
+  color white
+  height 100vh
+  display flex
+  flex-direction column
+  justify-content flex-start
+  align-items center
+  z-index 1
 
-.nav-menu {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-.nav-menu ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-}
+.logo
+  margin-top 5px
 
-.nav-menu li {
-  margin-bottom: 20px;
-}
-.dashboard-link a {
-  background-color: #d8dee4;
-  color: white;
-}
+.nav-menu
+  height 100%
+  display flex
+  align-items center
+
+  ul
+    list-style none
+    padding 0
+    width 100%
+
+  li
+    margin-bottom 20px
+
+.dashboard-link a
+  background-color #d8dee4
+  color white
 
 /* Mantendo o hover para o Dashboard com a cor aplicada */
+.nav-menu
+  a
+    color white
+    text-decoration none
+    font-size 12px
+    font-weight bold
+    display flex
+    flex-direction column // Colocar ícone acima do texto
+    align-items center
+    justify-content center
+    padding 10px
+    border-radius 5px
+    transition background-color 0.3s
 
-.nav-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column; /* Colocar ícone acima do texto */
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.nav-menu a:hover {
-  background-color: #0056b3;
-}
+  a:hover
+    background-color #0056b3
 </style>

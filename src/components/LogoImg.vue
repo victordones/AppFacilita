@@ -26,12 +26,12 @@ export default {
 }
 </script>
 
-<style scoped>
-.logo {
-  margin-bottom: 5px;
-}
-img {
-  display: block;
-  object-fit: contain; /* Mantém a proporção */
-}
+<style lang="stylus" scoped>
+
+.logo
+  margin-bottom 5px
+
+img
+  display block
+  object-fit contain
 </style>

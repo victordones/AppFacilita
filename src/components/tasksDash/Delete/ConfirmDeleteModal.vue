@@ -45,91 +45,82 @@ export default {
 }
 </script>
 
-<style scoped>
-.confirmation-modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
+<style lang="stylus" scoped>
+.confirmation-modal-overlay
+  position fixed
+  top 0
+  left 0
+  right 0
+  bottom 0
+  background-color rgba(0, 0, 0, 0.5)
+  display flex
+  justify-content center
+  align-items center
+  z-index 1000
 
-.confirmation-modal-content {
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 400px;
-  text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+.confirmation-modal-content
+  background-color white
+  padding 30px
+  border-radius 10px
+  width 450px
+  text-align center
+  box-shadow 0px 4px 10px rgba(0, 0, 0, 0.1)
 
-.delete-icon {
-  width: 80px;
-  height: 80px;
-}
+.delete-icon
+  width 80px
+  height 80px
 
-.radius-trash {
-  background-color: #edf6fc; /* cor de fundo semelhante à da imagem */
-  border-radius: 50%; /* faz com que o elemento seja um círculo */
-  width: 136px; /* ajusta o tamanho para manter proporção de círculo */
-  height: 136px; /* igual à largura para manter o círculo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 20px; /* centraliza e dá espaço inferior */
-}
-h2 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
-}
+.radius-trash
+  background-color #edf6fc
+  border-radius 50%
+  width 136px
+  height 136px
+  display flex
+  justify-content center
+  align-items center
+  margin 0 auto 20px
 
-.highlight {
-  color: #ff4d4f;
-}
+h2
+  font-size 20px
+  color #333
+  margin-bottom 10px
+  font-weight bold
 
-p {
-  font-size: 14px;
-  color: #777;
-  margin-bottom: 30px;
-}
+.highlight
+  color #ff4874
+  font-weight bold
 
-.button-container {
-  display: flex;
-  justify-content: center; /* Centraliza os botões horizontalmente */
-  gap: 20px; /* Adiciona espaçamento entre os botões */
-}
+p
+  font-size 14px
+  color #777
+  margin-bottom 30px
 
-.cancel-button {
-  background-color: #28a745;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
+.button-container
+  display flex
+  justify-content center
+  gap 20px
 
-.cancel-button:hover {
-  background-color: #218838;
-}
+.cancel-button
+  background-color #28a745
+  color white
+  padding 10px 20px
+  border none
+  border-radius 5px
+  cursor pointer
+  font-size 16px
 
-.confirm-button {
-  background-color: #ff4d4f;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
+.cancel-button:hover
+  background-color #218838
 
-.confirm-button:hover {
-  background-color: #d9363e;
-}
+.confirm-button
+  background-color #ff4d4f
+  color white
+  padding 10px 20px
+  border none
+  border-radius 5px
+  cursor pointer
+  font-size 16px
+
+.confirm-button:hover
+  background-color #d9363e
 </style>

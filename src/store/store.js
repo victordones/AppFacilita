@@ -3,9 +3,13 @@ import { createStore } from 'vuex'
 export default function createStoreInstance() {
   return createStore({
     state: {
-      tasks: JSON.parse(localStorage.getItem('tasks')) || []
+      tasks: JSON.parse(localStorage.getItem('tasks')) || [],
+      searchQuery: '' // Estado para armazenar o valor da busca
     },
     mutations: {
+      SET_SEARCH_QUERY(state, query) {
+        state.searchQuery = query
+      },
       // Mutação para adicionar uma nova tarefa ao estado
       ADD_TASK(state, task) {
         state.tasks.push(task)
@@ -43,6 +47,9 @@ export default function createStoreInstance() {
       }
     },
     actions: {
+      setSearchQuery({ commit }, query) {
+        commit('SET_SEARCH_QUERY', query)
+      },
       // Ação para adicionar a tarefa chamando a mutação
       addTask({ commit }, task) {
         commit('ADD_TASK', task)
@@ -70,6 +77,18 @@ export default function createStoreInstance() {
       }
     },
     getters: {
+      filteredTasks: (state) => {
+        const query = state.searchQuery.toLowerCase().trim()
+        if (!query) {
+          return state.tasks
+        }
+        return state.tasks.filter((task) => {
+          return (
+            task.title.toLowerCase().includes(query) ||
+            task.description.toLowerCase().includes(query)
+          )
+        })
+      },
       // Getter para obter o número total de tarefas
       totalTasks: (state) => state.tasks.length,
       pendingTasksCount: (state) => {

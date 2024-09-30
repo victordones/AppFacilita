@@ -22,21 +22,20 @@ export default {
 }
 </script>
 
-<style scoped>
-.floating-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
+<style lang="stylus" scoped>
+.floating-btn
+  position fixed
+  bottom 20px
+  right 20px
+  background-color #28a745
+  color white
+  border none
+  border-radius 50%
+  width 60px
+  height 60px
+  font-size 30px
+  display flex
+  justify-content center
+  align-items center
+  cursor pointer
 </style>
