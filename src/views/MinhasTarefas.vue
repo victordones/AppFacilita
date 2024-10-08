@@ -32,24 +32,22 @@ export default {
 }
 </script>
 
-<style scoped>
-.content {
-}
-.minhas-tarefas {
-  display: flex;
-  height: 100vh; /* Ocupa toda a altura da tela */
-}
+<style lang="stylus" scoped>
+.content
+  position fixed
+  display flex
+  flex 1
+  margin-top 2px
 
-.main-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: #f5f6fa; /* cor de fundo */
-}
+.minhas-tarefas
+  display flex
+  height 100vh /* Ocupa toda a altura da tela */
+  width 100vw /* Ocupa toda a altura da tela */
 
-.content {
-  display: flex;
-  flex: 1;
-  margin-top: 2px;
-}
+.main-content
+  flex 1
+  display flex
+  flex-direction column
+  background-color #f5f6fa /* cor de fundo */
+  height 100vh
 </style>

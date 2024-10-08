@@ -24,7 +24,8 @@ export default {
 
 <style lang="stylus" scoped>
 .login-page
-  display flex
+  display grid
+  grid-template-columns 1fr 2fr
   height 100vh
 
   .login-left
@@ -33,14 +34,11 @@ export default {
     justify-content center
     align-items center
     color white
-    width 33%
 
   .login-right
-    padding 50px
     display flex
     flex-direction column
     justify-content center
-    width 66%
 
 
     h2

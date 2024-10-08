@@ -45,6 +45,7 @@ export default {
   min-height: 100vh;
   background-color: #ccc;
   font-weight: bold;
+
 }
 
 .main-content {
@@ -53,7 +54,10 @@ export default {
   flex-direction: column;
   padding: 20px;
   background-color: #E9F4FB;
-  padding: 100px;
+  padding: 100px 250px;
+  height: 100vh;
+  margin-left: 315px
+
 }
 
 .task-section {

@@ -22,11 +22,12 @@
   top 0
   left 0
   width 100%
-  z-index 0
+  z-index 20
 
 .user-info
   display flex
   align-items center
+  margin-right: 250px
 
 .avatar
   border-radius 50%

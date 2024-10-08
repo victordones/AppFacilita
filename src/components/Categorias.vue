@@ -47,16 +47,26 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.task-list
-  display flex
-  align-items center
-  background-color #f4fbff
-  width 227px
+.task-list {
+  position: fixed; /* Fixar o componente */
+  top: 0;
+  left: 100px; /* Ajuste a posição conforme necessário */
+  width: 227px; /* Defina a largura do componente */
+  height: 100vh; /* Ocupar toda a altura da janela */
+  background-color: #f4fbff;
+  padding-right: 20px;
+  padding-top: 260px;
+  z-index: 0; /* Certifique-se de que o componente fique acima de outros */
+}
+
+
+
 
 .categories
-  width 190px
   margin-left 40px
   margin-bottom 80px
+  position fixed
+
 
   h4
     font-size 17px
@@ -67,7 +77,6 @@ export default {
   ul
     list-style none
     padding 0
-    position fixed
 
   li
     margin-bottom 10px
