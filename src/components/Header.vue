@@ -3,7 +3,7 @@
     <div class="user-info">
       <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar" />
       <div>
-        <h4>Eduardo Pereira da Costa</h4>
+        <h4>Usuário</h4>
         <p>Front-end Developer</p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="logo">
     <LogoImg :caminhoIcone="logoSrc" :size="'100px'" />
-    <h1><span>FACILITA</span>TASKS</h1>
+    <h1><span>MANANGER</span>TASKS</h1>
     <p>Gestão de tarefas pessoais</p>
   </div>
 </template>

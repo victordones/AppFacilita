@@ -17,7 +17,7 @@ export default {
       pendingTasksCount: 'pendingTasksCount'
     }),
     userName() {
-      return 'Eduardo Pereira' 
+      return 'Usuário'
     }
   }
 }
